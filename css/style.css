@@ -1,0 +1,136 @@
+
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	height: 100%;
+}
+body{
+	font: 700 1.8rem/1 'Quicksand', sans-serif ;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	font-size: 1.8rem;
+	min-height: 100%;
+	color: #fff;
+	letter-spacing: 1px;
+	background: #e5eeee;
+}
+.form {
+	width: 400px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px 70px;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7)
+}
+.menu {
+	margin-bottom: 50px;
+}
+.menu__item {
+	margin-right: 20px;
+	opacity: 0.5; 
+}
+.menu__item:hover,
+.menu__item:focus,
+.menu__item--active {
+	opacity: 1;
+	border-bottom: 1px solid red;
+	padding-bottom: 2px;
+	cursor: pointer;
+}
+.label {
+	font-size: 1.6rem;
+}
+.label--small {
+	font-size: 1.3rem;
+}
+.form__block {
+	display: inline-block;
+	background: transparent;
+	margin-top: 10px;
+	width: 100%;
+	padding: 12px 5px;
+	border: 1px solid #9984c7;
+	letter-spacing: 1px;
+	opacity: 0.8;
+	color: #fff;
+	margin-bottom: 25px;
+	transition: all .3s ease-out;
+}
+.form__block:hover {
+	background: rgba(35, 174, 146, 0.5);
+}
+.form__checkbox {
+	margin-right: 5px;
+	
+}
+.form__btn {
+	display: inline-block;
+	background: #23ae92;
+	width: 100%;
+	padding: 12px;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	margin: 35px 0;
+	border: 1px solid #23ae92 ;
+	transition: all .3s ease-in-out
+}
+.form__btn:hover,
+.form__btn:focus,
+.form__btn:active {
+	background: transparent;
+	border: 1px solid #fff;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	
+}
+.form__footer {
+	color: #b9b9cc;
+	font-size: 1.3rem;
+	font-weight: 400;
+	transition: all .3s ease-in-out
+}	
+.form__footer:hover,
+.form__footer:focus,
+.form__footer:active {
+	background: rgba(35, 174, 146, 0.5);
+}
+
+
+/* CHECKBOX */
+.checkbox {
+	position:relative;
+	padding-left:25px;
+}
+.checkbox input[type=checkbox] {
+	display:none;
+}
+.checkbox label:after {
+	content:'';
+	display:block;
+	height:14px;
+	width:14px;
+	outline:1px solid #939598;
+	position:absolute;
+	top: 18%;
+	left: 0;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+	outline:1px solid #939598;
+	width:12px;
+	height:12px;
+	background-color: #23ae92;
+	background-image: url(../img/check.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
